@@ -1,0 +1,60 @@
+.secondSection {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(45% 50%, #6d7073, #292d33);
+  padding: 50px 0;
+}
+
+.section {
+  width: 35%;
+  margin-bottom: 30px;
+  background: #fffefe;
+  padding: 50px;
+  text-align: center;
+  color: #808080;
+  box-shadow: 0 0 15px 2px black;
+  border-radius: 30px;
+}
+
+.secondSection__firstSection {
+  display: flex;
+  justify-content: center;
+}
+
+.secondSection__secondSection {
+  display: flex;
+  justify-content: center;
+}
+
+.secondSection__title {
+  padding-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+.secondSection__title:after {
+  content: "";
+  padding-left: 160px;
+  border-bottom: 1.5px solid #555C66;
+}
+
+.secondSection__ourMission {
+  margin-right: 50px;
+}
+
+.secondSection__ourValues {
+  margin-right: 50px;
+}
+
+.secondSection__text {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.secondSection__special {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=secondSection.css.map */

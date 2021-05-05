@@ -1,0 +1,83 @@
+@import "colors";
+.fourthSection{
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  background:$backgroundThirdSection;
+
+}
+.fourthSection__title{
+  text-align: center;
+  color: $textAboutColor;
+  font-size: 2.5em;
+  font-weight: bold;
+  &:after{
+    content: '';
+    padding-left: 20em;
+    border-top: 1.5px solid $textAboutColor;
+  }
+}
+.fourthSection__content{
+  display: flex;
+}
+.fourthSection__img img{
+  width: 100%;
+}
+.fourthSection__content{
+  font-size: 1.1em;
+  line-height: 25px;
+  padding: 10px 20px;
+  letter-spacing: 0.5px;
+  color: $sectionTitleColor;
+  border-radius: 30px;
+}
+
+.fourthSection__text {
+  list-style-type: none;
+  padding-bottom: 20px;
+   }
+.fourthSection__text:before {
+    content: '\2714';
+  padding-right: 20px;
+}
+@media (min-width: 320px) and (max-width: 768px){
+  .fourthSection__title{
+    font-size: 1.5em;
+    &:after{
+      content: '';
+      padding-left: 15em;
+      border-top: 1.5px solid $textAboutColor;
+    }
+  }
+  .fourthSection__content{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+@media (min-width: 769px) and (max-width: 1120px){
+  .fourthSection__title{
+    font-size: 2em;
+    &:after{
+      content: '';
+      padding-left: 15em;
+      border-top: 1.5px solid $textAboutColor;
+    }
+  }
+  .fourthSection__content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1121px){
+  .fourthSection__list{
+    width: 50%;
+    margin: 20px;
+  }
+  .fourthSection__content{
+    display: flex;
+  }
+  .fourthSection__img{
+    width: 60%;
+  }
+}

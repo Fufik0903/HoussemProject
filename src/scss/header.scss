@@ -1,0 +1,26 @@
+@import "colors";
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: $backgroundHeader;
+
+}
+.header__logo{
+  text-align: center;
+  justify-content: center;
+  flex-grow: 1;
+  display: flex;
+  color: #B8B8B8;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+.header__logo p{
+  align-self: center;
+}
+.header__logo img{
+  height: 80px;
+  padding: 0 30px;
+}
