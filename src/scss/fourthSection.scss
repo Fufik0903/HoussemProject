@@ -31,14 +31,28 @@
   color: $sectionTitleColor;
   border-radius: 30px;
 }
-
+.fourthSection__img{
+  padding-bottom: 30px;
+}
 .fourthSection__text {
   list-style-type: none;
   padding-bottom: 20px;
    }
-.fourthSection__text:before {
-    content: '\2714';
+
+.list:before {
+  content: '\2714';
   padding-right: 20px;
+}
+.listAr {
+  position: relative;
+  text-align: right;
+  font-size: 30px;
+}
+.listAr:before {
+  position: absolute;
+  content: '\2714';
+  padding-left: 20px;
+  right: -30px;
 }
 @media (min-width: 320px) and (max-width: 768px){
   .fourthSection__title{

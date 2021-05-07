@@ -5,6 +5,7 @@
 @import "secondSection";
 @import "fourthSection";
 @import "thirdSection";
+@import "fiveSection";
 
 @font-face {
   font-family: 'Proxima Nova Lt';
@@ -14,6 +15,15 @@
   url('../fonts/ProximaNova-Light.woff') format('woff'),
   url('../fonts/ProximaNova-Light.ttf') format('truetype');
   font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'),
+  url('../fonts/librebaskerville.woff2') format('woff2'),
+  url('../fonts/librebaskerville.woff') format('woff'),
+  url('../fonts/librebaskerville.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 *{
@@ -27,4 +37,24 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   box-shadow: 0 1px 25px 1px black;
+}
+.ru{
+  display: none;
+}
+.eng{
+  display: none;
+}
+.arAlign{
+  text-align: right;
+  font-size: 25px;
+}
+.ar{
+  display: none;
+}
+.arTitle{
+  text-align: center;
+  display: none;
+}
+.hide{
+  display: none;
 }

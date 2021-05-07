@@ -9,7 +9,7 @@
 .section{
   margin-bottom: 30px;
   background: $backgroundSectionOfSolution;
-  padding: 50px;
+  padding: 20px 20px 30px 20px;
   text-align: center;
   color: $sectionFontColor;
   box-shadow: 0 0 15px 2px black;
@@ -35,8 +35,8 @@
   }
 }
 .secondSection__text{
-  text-align: left;
   font-size: 1.2em;
+  padding-left: 15px;
 }
 .secondSection__special{
   color: red;
@@ -65,14 +65,14 @@
 }
 @media (min-width: 769px) and (max-width: 1120px){
   .secondSection__ourMission{
-    margin-right: 16px;
+    margin-right: 32px;
     width: 50%;
   }
   .secondSection__ourVision{
     width: 50%;
   }
   .secondSection__ourValues{
-    margin-right: 16px;
+    margin-right: 32px;
     width: 50%;
   }
   .secondSection__ourGoals{
