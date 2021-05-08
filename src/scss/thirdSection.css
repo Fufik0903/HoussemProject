@@ -1,104 +1,17 @@
-.thirdSection {
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
-  border-bottom: 1.5px solid #555C66;
-  border-top: 1.5px solid #555C66;
-}
+/* Error: expected "{".
+ *    ,
+ * 61 | </div>
+ *    |       ^
+ *    '
+ *   thirdSection.scss 61:7  root stylesheet */
 
-.thirdSection__title {
-  text-align: center;
-  color: #555C66;
-  font-size: 2.5em;
-  font-weight: bold;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 61 \2502  </div>\a    \2502        ^\a    \2575 \a   thirdSection.scss 61:7  root stylesheet';
 }
-.thirdSection__title:after {
-  content: "";
-  padding-left: 20em;
-  border-top: 1.5px solid #555C66;
-}
-
-.thirdSection__listStudents {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 16px 0 16px 24px;
-}
-
-.thirdSection__listParents {
-  display: flex;
-  justify-content: center;
-  padding: 16px 24px;
-}
-
-.thirdSection__service {
-  width: 320px;
-  height: 200px;
-  box-shadow: 0px 0px 7px 1px #555c66;
-  text-align: center;
-  margin-right: 24px;
-  margin-bottom: 16px;
-  color: white;
-  text-transform: uppercase;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-color: #bababa;
-}
-
-.img_1 {
-  background-image: url("../img/pexels-dominika-roseclay-977840.jpg");
-}
-
-.img_2 {
-  background-image: url("../img/pexels-ekaterina-bolovtsova-4049960.jpg");
-}
-
-.img_3 {
-  background-image: url("../img/pexels-alexandr-podvalny-1008155.jpg");
-}
-
-.img_4 {
-  background-image: url("../img/pexels-torsten-dettlaff-69866.jpg");
-}
-
-.img_5 {
-  background-image: url("../img/pexels-thisisengineering-3861970.jpg");
-}
-
-.img_6 {
-  background-image: url("../img/pexels-cottonbro-5138166.jpg");
-}
-
-.img_7 {
-  background-image: url("../img/pexels-ekrulila-2292837.jpg");
-}
-
-.img_8 {
-  background-image: url("../img/pexels-nubia-navarro-(nubikini)-385997.jpg");
-}
-
-.img_9 {
-  background-image: url("../img/pexels-pixabay-40568.jpg");
-}
-
-.img_10 {
-  background-image: url("../img/pexels-sora-shimazaki-5669602.jpg");
-}
-
-.img_11 {
-  background-image: url("../img/pexels-cytonn-photography-955389.jpg");
-}
-
-.img_12 {
-  background-image: url("../img/pexels-mikhail-nilov-6964363.jpg");
-}
-
-.thirdSection__service p {
-  padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  text-shadow: 0 0 20px black;
-}
-
-/*# sourceMappingURL=thirdSection.css.map */

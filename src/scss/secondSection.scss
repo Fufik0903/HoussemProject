@@ -4,26 +4,24 @@
   flex-direction: column;
   background: radial-gradient(45% 50%, #6d7073, $backgroundSecondSection);
   padding: 50px 20px;
-  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
 }
 .section{
   margin-bottom: 30px;
   background: $backgroundSectionOfSolution;
-  padding: 20px 20px 30px 20px;
+  padding: 30px 20px 30px 20px;
+  margin-right: 32px;
   text-align: center;
   color: $sectionFontColor;
   box-shadow: 0 0 15px 2px black;
   border-radius: 30px;
 
 }
-.secondSection__firstSection{
+.secondSection__content{
   display: flex;
   justify-content:center ;
 }
-.secondSection__secondSection{
-  display: flex;
-  justify-content:center ;
-}
+
 .secondSection__title {
   font-size: 2em;
   font-weight: bold;
@@ -35,8 +33,12 @@
   }
 }
 .secondSection__text{
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding-left: 15px;
+  text-align: left;
+}
+.secondSection__text li{
+  padding-bottom: 10px;
 }
 .secondSection__special{
   color: red;
@@ -44,38 +46,26 @@
   text-decoration: underline;
 }
 @media (min-width: 320px) and (max-width: 768px){
-  .secondSection__firstSection{
-    flex-direction: column;
-    align-items: center;
+  .secondSection{
+    padding: 50px 40px;
   }
-  .secondSection__secondSection{
+  .secondSection__content{
     flex-direction: column;
     align-items: center;
   }
   .section{
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
   }
   .secondSection__title {
     font-size: 1.5em;
   }
   .secondSection__text{
     text-align: left;
-    font-size: 1em;
   }
 }
 @media (min-width: 769px) and (max-width: 1120px){
-  .secondSection__ourMission{
+  .section {
     margin-right: 32px;
-    width: 50%;
-  }
-  .secondSection__ourVision{
-    width: 50%;
-  }
-  .secondSection__ourValues{
-    margin-right: 32px;
-    width: 50%;
-  }
-  .secondSection__ourGoals{
     width: 50%;
   }
 }

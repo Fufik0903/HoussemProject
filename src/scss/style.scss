@@ -1,12 +1,11 @@
-@import "footer";
-@import "buttons";
 @import "header";
 @import "firstSection";
 @import "secondSection";
-@import "fourthSection";
 @import "thirdSection";
-@import "fiveSection";
-
+@import "fourthSection";
+@import "footer";
+@import "form";
+@import "ArStyle";
 @font-face {
   font-family: 'Proxima Nova Lt';
   src: url('../fonts/ProximaNova-Light.eot');
@@ -27,8 +26,9 @@
   font-style: normal;
 }
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: 'Proxima Nova Lt';
@@ -38,23 +38,11 @@ body {
   margin: 0 auto;
   box-shadow: 0 1px 25px 1px black;
 }
-.ru{
+.ruLng{
+  display: none
+}
+.engLng{
   display: none;
 }
-.eng{
-  display: none;
-}
-.arAlign{
-  text-align: right;
-  font-size: 25px;
-}
-.ar{
-  display: none;
-}
-.arTitle{
-  text-align: center;
-  display: none;
-}
-.hide{
-  display: none;
-}
+
+

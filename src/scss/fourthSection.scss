@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   background:$backgroundThirdSection;
-
 }
 .fourthSection__title{
   text-align: center;
@@ -14,16 +13,15 @@
   &:after{
     content: '';
     padding-left: 20em;
-    border-top: 1.5px solid $textAboutColor;
+    border-top: 1px solid $firstSectionTextColor;
   }
-}
-.fourthSection__content{
-  display: flex;
 }
 .fourthSection__img img{
   width: 100%;
 }
 .fourthSection__content{
+  display: flex;
+  flex-direction: column;
   font-size: 1.1em;
   line-height: 25px;
   padding: 10px 20px;
@@ -35,13 +33,43 @@
   padding-bottom: 30px;
 }
 .fourthSection__text {
+  font-size: 22px;
   list-style-type: none;
-  padding-bottom: 20px;
-   }
-
-.list:before {
+  padding-bottom: 30px;
+}
+.fourthSection__text:before{
   content: '\2714';
   padding-right: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+  .fourthSection__title{
+    font-size: 1.5em;
+    &:after{
+      content: '';
+      padding-left: 5em;
+      border-top: 1.5px solid $textAboutColor;
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1120px){
+  .fourthSection__title{
+    font-size: 2em;
+    &:after{
+      content: '';
+      padding-left: 15em;
+      border-top: 1.5px solid $textAboutColor;
+    }
+  }
+}
+@media (min-width: 1121px){
+  .fourthSection__list{
+    margin: 20px;
+  }
+  .fourthSection__img{
+    width: 80%;
+    align-self: center;
+  }
 }
 .listAr {
   position: relative;
@@ -53,45 +81,4 @@
   content: '\2714';
   padding-left: 20px;
   right: -30px;
-}
-@media (min-width: 320px) and (max-width: 768px){
-  .fourthSection__title{
-    font-size: 1.5em;
-    &:after{
-      content: '';
-      padding-left: 15em;
-      border-top: 1.5px solid $textAboutColor;
-    }
-  }
-  .fourthSection__content{
-    display: flex;
-    flex-direction: column;
-  }
-
-}
-@media (min-width: 769px) and (max-width: 1120px){
-  .fourthSection__title{
-    font-size: 2em;
-    &:after{
-      content: '';
-      padding-left: 15em;
-      border-top: 1.5px solid $textAboutColor;
-    }
-  }
-  .fourthSection__content{
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 1121px){
-  .fourthSection__list{
-    width: 50%;
-    margin: 20px;
-  }
-  .fourthSection__content{
-    display: flex;
-  }
-  .fourthSection__img{
-    width: 60%;
-  }
 }

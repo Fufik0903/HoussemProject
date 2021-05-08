@@ -4,16 +4,13 @@
   justify-content: space-between;
   padding: 20px;
   background: $backgroundHeader;
-
 }
 .header__logo{
   font-family: 'Libre Baskerville';
   text-align: center;
   justify-content: center;
   flex-grow: 1;
-  display: flex;
   color: #B8B8B8;
-  font-size: 28px;
   font-weight: bold;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -24,4 +21,71 @@
 .header__logo img{
   height: 80px;
   padding: 0 30px;
+}
+.header__buttonBlock{
+  align-self: center;
+}
+.header__btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-left: 16px;
+  background: $btnBurger;
+  color: $backgroundThirdSection;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  &:hover{
+    filter: contrast(200%);
+    box-shadow: 0 1px 5px 1px $backgroundThirdSection;
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 320px) and (max-width: 768px){
+  .header__logo{
+    font-size: 1.5em;
+    align-self: center;
+  }
+  .header__buttonBlock{
+    display: flex;
+    flex-direction: column;
+  }
+  .header__btn{
+    width: 40px;
+    height: 40px;
+    margin: 16px;
+  }
+  .header__logo p{
+    align-self: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1120px){
+  .header__logo{
+    font-size: 2em;
+    align-self: center;
+    justify-content: center;
+    flex-grow: 1;
+    display: flex;
+  }
+  .header__buttonBlock{
+    display: flex;
+    flex-direction: column;
+  }
+  .header__btn{
+    width: 45px;
+    height: 45px;
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 1121px){
+  .header__logo{
+    font-size: 2.5em;
+    justify-content: center;
+    flex-grow: 1;
+    display: flex;
+  }
 }
