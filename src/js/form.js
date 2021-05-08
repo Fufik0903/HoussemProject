@@ -36,18 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let index = 0; index < formReq.length; index++) {
       const input = formReq[index];
       formRemoveError(input);
-      if (input.classList.contains('_email')) {
-        if (emailTest(input)) {
-          formAddError(input);
-          error++;
-        }
-      }
-      else{
         if(input.value === ""){
           formAddError(input);
           error++;
         }
-      }
     }
     return error;
   }
@@ -60,7 +52,5 @@ document.addEventListener('DOMContentLoaded', function () {
     input.parentElement.classList.remove('_error');
     input.classList.remove('_error');
   }
-  function emailTest(input) {
-    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w[a-z]{2,8})+$/.test(input.value);
-  }
+
 });

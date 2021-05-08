@@ -146,7 +146,6 @@
   margin-bottom: 30px;
   background: #fffefe;
   padding: 30px 20px 30px 20px;
-  margin-right: 32px;
   text-align: center;
   color: #808080;
   box-shadow: 0 0 15px 2px black;
@@ -185,7 +184,8 @@
     flex-direction: column;
     align-items: center; }
   .section {
-    padding: 20px 20px 40px 20px; }
+    padding: 20px 20px 40px 20px;
+    margin-right: 0; }
   .secondSection__title {
     font-size: 1.5em; }
   .secondSection__text {
@@ -198,7 +198,8 @@
 
 @media (min-width: 1121px) {
   .section {
-    width: 35%; }
+    width: 35%;
+    margin-right: 32px; }
   .secondSection__ourMission {
     margin-right: 50px; }
   .secondSection__ourValues {
@@ -560,7 +561,7 @@
 
 .firstSection__informationAr {
   padding: 20px 30px 20px 50px;
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 50px; }
 
 .thirdSection__serviceAr {
