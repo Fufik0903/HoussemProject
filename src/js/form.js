@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
         form.classList.remove('_sending');
       }else{
+        alert(JSON.stringify(response));
         alert("Ошибка");
         form.classList.remove('_sending');
       }
